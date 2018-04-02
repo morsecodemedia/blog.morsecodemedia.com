@@ -1,5 +1,5 @@
-baseURL = "http://example.org/"
+baseURL = "https://blog.morsecodemedia.com/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Blog posts of Brandon Morse"
 theme = "cactus-plus"
 
