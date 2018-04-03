@@ -20,6 +20,6 @@ When I spoke about this issue last year, I discussed three ways to approach the 
 
 I'll leave you with a neat little site that promotes severing ties with IE8: [http://breakupwithie8.com][breakup].
 
-[part1]: https://blog.morsecodemedia.com/is-it-time-to-dropf-support-for-ie8 "Is It Time to Drop Support for IE89? - PART 1"
-[stats]: http://gs.statcounter.com/ "Global Stats"
-[breakup]: http://breakupwithie8.com "Are you ready to breakup with IE8?"
+  [part1]: https://blog.morsecodemedia.com/is-it-time-to-dropf-support-for-ie8 "Is It Time to Drop Support for IE89? - PART 1"
+  [stats]: http://gs.statcounter.com/ "Global Stats"
+  [breakup]: http://breakupwithie8.com "Are you ready to breakup with IE8?"
