@@ -37,6 +37,6 @@ When talking about domain names, you will occasionally hear the term **TLD**, or
 
 In the above image, you see a **URL** (Uniform Resource Locator), that is comprised of a protocol: https; the domain name: google; and the top-level domain: com. The **Hypertext Transfer Protocol** (HTTP) is an application protocol that is the foundation of data communication for the Web. You'll notice in the example above, it has **HTTPS** instead of HTTP because it is layering the HTTP protocol on top of the **SSL/TLS** protocol. SSL (Secure Socket Layer) is a standard security protocol that uses a signed certificate to encrypt data sent back and forth from your web browser to a web server.
 
-We've covered a lot of the basics here. Be sure to check back soon for the next post in this series, where I'll take a look at the pieces that make up a website. As always, you reach out to me on Twitter [@morsecodemedia][twacct].
+We've covered a lot of the basics here. Be sure to check back soon for the next post in this series, where I'll take a look at the pieces that make up a website. As always, you can reach out to me on Twitter [@morsecodemedia][twacct].
 
   [twacct]: https://twitter.com/morsecodemedia "Follow @morsecodemedia on Twitter"
