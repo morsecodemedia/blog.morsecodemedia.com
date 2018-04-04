@@ -1,7 +1,7 @@
 ---
 title: "Choosing a CMS Solution for Your Website"
-date: 2018-04-04T08:54:16-04:00
-draft: true
+date: 2015-01-16T08:54:16-04:00
+draft: false
 ---
 
 When deciding to build or update a website, it’s best to approach the project with an open mind, rather than a one-size fits all mentality. If you think deciding on a Content Management System (CMS) is quick process, you should take a step back and begin with a Discovery phase. Lay out all of the essentials that will need to be met in order to ensure a successful outcome.
