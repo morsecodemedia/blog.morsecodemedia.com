@@ -1,18 +1,18 @@
 baseURL = "https://blog.morsecodemedia.com/"
 languageCode = "en-us"
-title = "Blog posts of Brandon Morse"
+title = "<morsecodemedia role='blog'>"
 theme = "cactus-plus"
 googleAnalytics = "your_google_analytics_id"
 
 [params]
 	author = "Brandon Morse"
-	description = "Site Description"
+	description = "Technology-centric blog posts by Brandon Morse"
 	bio = ""
 
 	twitter = "@morsecodemedia"
 
 	enableRSS = true
-	enableToc = true
+	enableToc = false
 
 	enableDisqus = false
 	disqusShortname = "your_disqus_short_name"
@@ -69,5 +69,7 @@ googleAnalytics = "your_google_analytics_id"
 
 # Add additional social link entries underneath
 [social]
-	twitter-square = "https://www.twitter.com/morsecodemedia"
 	github-square = "https://www.github.com/morsecodemedia"
+	linkedin-square = "https://www.linkedin.com/in/brandonmorse/"
+	twitter-square = "https://www.twitter.com/morsecodemedia"
+

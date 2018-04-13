@@ -1,5 +1,6 @@
 ---
 title: "Why Build a Custom 404 Error Page"
+description: "A custom built 404 error page will help users find information more easily, and encourage them to explore further."
 date: 2014-11-18T09:19:08-04:00
 draft: false
 ---

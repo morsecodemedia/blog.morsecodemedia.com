@@ -1,5 +1,6 @@
 ---
-title: "Beyond Keywords and Metadata - The Developer's SEO"
+title: "Beyond Keywords and Metadata: The Developer's SEO"
+description: "In this article I discuss the role of the developer in SEO"
 date: 2015-04-03T16:47:05-04:00
 draft: false
 ---

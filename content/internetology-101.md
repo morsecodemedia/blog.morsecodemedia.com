@@ -1,5 +1,6 @@
 ---
 title: "Internetology 101"
+description: "Here I delve into the basics of the internet, including history and helpful definitions."
 date: 2015-04-15T14:44:32-04:00
 draft: false
 ---
