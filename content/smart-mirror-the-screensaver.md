@@ -198,7 +198,7 @@ Now let's create the Go-Home component (go-home.vue)
 
 The template is just a `<router-link>` that goes to the main screen, in this example I called it "landing-page". The styles make the button full-screen, with an `opacity` of 0 and I set the `z-index` really high to try and ensure that if you touch anywhere on the screen, it will exit out of the screensaver and bring you back to the main screen.
 
-That's pretty much it for now. Later, once I get into building out the timer functionality, I will have to come back and update the `go-home` component to make sure that it emits an even to reset the timer.
+That's pretty much it for now. Later, once I get into building out the timer functionality, I will have to come back and update the `go-home` component to make sure that it emits an event to reset the timer.
 
 You can follow the progress of the smart mirror [here][smrepo] and the screensaver component [here][ss].
 
