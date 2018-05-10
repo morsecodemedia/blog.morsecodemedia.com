@@ -69,26 +69,14 @@ As mentioned earlier, I plan on the mirror to have touch capabilities. It will a
 
 There are many more features I would like to include, but didn't feel that they needed to be part of the initial build.  Below is a list of a few of those features. I've enabled [FeatHub][fh], a feature list suggesting/voting platform to the repository, in which I've gone into more detail with some of these features. If you have any suggestions, please feel free to add to the list.
 
-* Finances
-  * Fiat and Crypto currencies
-* Sports Scores
-* Shopping Lists
-* Basic Reminders
-* Smart Home
-  * Thermostats &amp; Zones
-  * Smoke/CO2 Detectors
-  * Front Door Locks
-  * Video Doorbell
-  * Garage Door
-  * Security Cameras
-  * Lights &amp; Fans
-  * Sprinkler System
+[![Feature Requests](http://feathub.com/morsecodemedia/morsecodemirror?format=svg)](http://feathub.com/morsecodemedia/morsecodemirror)
+
 
   [sm]: https://duckduckgo.com/?q=smart+mirror&ia=web "Search DuckDuckGo for Smart Mirror"
   [pi]: https://www.raspberrypi.org/products/raspberry-pi-3-model-b/ "Raspberry Pi 3 Model B"
-  [smrepo]: https://github.com/morsecodemedia/smart-mirror "My Github repository for my smart mirror project"
+  [smrepo]: https://github.com/morsecodemedia/morsecodemirror "My Github repository for my smart mirror project"
   [ejs]: https://electronjs.org/ "Build cross platform desktop apps with JavaScript, HTML, and CSS"
   [vue]: https://vuejs.org/ "The Progressive JavaScript Framework"
   [elevue]: https://github.com/SimulatedGREG/electron-vue "An Electron & Vue.js quick start boilerplate with vue-cli scaffolding, common Vue plugins, electron-packager/electron-builder, unit/e2e testing, vue-devtools, and webpack."
   [greg]: https://github.com/SimulatedGREG "Greg Holguin's Github"
-  [fh]: https://feathub.com/morsecodemedia/smart-mirror "Feature list for my smart mirror"
+  [fh]: https://feathub.com/morsecodemedia/morsecodemirror "Feature list for my smart mirror"
