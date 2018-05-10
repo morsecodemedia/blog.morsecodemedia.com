@@ -1,7 +1,7 @@
 ---
 title: "Smart Mirror: The Screensaver"
 date: 2018-05-09T21:56:34-04:00
-draft: true
+draft: false
 ---
 
 As mentioned in the original post about the smart mirror, one of the first things I wanted to address was the [Screensaver][ss] feature for the project. This smart mirror is actually going to consist of multiple pages or screens, rather than your typical single screen with multiple components displayed at once. There will be components that have a quick overview view from the main screen, but also a feature specific screen that has much more detail and features available as you drill in.
