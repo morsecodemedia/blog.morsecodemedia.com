@@ -2,7 +2,7 @@ baseURL = "https://blog.morsecodemedia.com/"
 languageCode = "en-us"
 title = "<morsecodemedia role='blog'>"
 theme = "cactus-plus"
-googleAnalytics = "your_google_analytics_id"
+googleAnalytics = "UA-5476316-2"
 
 [params]
 	author = "Brandon Morse"
