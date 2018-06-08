@@ -1,10 +1,10 @@
 ---
 title: "Architectural Short-Sightedness"
-date: 2018-06-08T16:02:27-04:00
+date: 2018-06-08T13:05:32-04:00
 draft: false
 ---
 
-Usually, I am the team member looking pass the current update. Rather than treating the tasks in the pipeline as check boxes to tick off, I look at the bigger picture. How will this affect the greater    project? Is this scalable. Will this hold value in 6, 12, 18 months from now?
+Usually, I am the team member looking pass the current update. Rather than treating the tasks in the pipeline as check boxes to tick off, I look at the bigger picture. How will this affect the greater project? Is this scalable. Will this hold value in 6, 12, 18 months from now?
 
   I take pride in this.
 
