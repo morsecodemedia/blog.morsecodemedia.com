@@ -1,7 +1,7 @@
 ---
 title: "Publishing to the npm Regristry"
 date: 2018-06-13T09:27:07-04:00
-draft: true
+draft: false
 ---
 
 **_Note: I am going to assume that if you are reading this post you know what Node and npm are. As well as, you have both installed and have used them to some extent that I will not be covering those topics._**
