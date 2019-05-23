@@ -23,6 +23,6 @@ build:
 	hugo
 
 deploy: build
-	rsync -rvhe ssh --progress --delete ./public/ blog:/var/www/blog.morsecodemedia.com/
+	rsync -rvhe ssh --progress --delete ./public/ blog:../mcmuser/sites/blog.morsecodemedia.com/
 
 .PHONY: new_post serve build deploy
