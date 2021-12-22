@@ -1,19 +1,23 @@
 <template>
   <section>
-    <article v-for="article of articles" :key="article.slug">
-      <img :src="article.img" />
+    <article v-for="post of posts" :key="post.slug">
       <div>
-        <NuxtLink :to="article.slug">
-          <h2>{{ article.title }}</h2>
+        <NuxtLink :to="post.slug">
+          <h2>{{ post.title }}</h2>
         </NuxtLink>
-        <p>{{ article.createdAt }}</p>
-        <p>{{ article.tags }}</p>
-        <p>{{ article.description }}</p>
-        <NuxtLink :to="article.slug">
+        <p>{{ post.createdAt }}</p>
+        <p>{{ post.tags }}</p>
+        <p>{{ post.description }}</p>
+        <NuxtLink :to="post.slug">
           Read Blog Post
         </NuxtLink>
       </div>
     </article>
+    <div id="next" v-if="nextPage">
+      <NuxtLink to="/page/2">
+        Next Page
+      </NuxtLink>
+    </div>
   </section>
 </template>
 
@@ -24,11 +28,14 @@ export default {
     const articles = await $content('articles')
       .only(['title', 'description', 'img', 'slug', 'draft', 'tags', 'createdAt'])
       .where({ draft: false })
+      .limit(5)
       .sortBy('createdAt', 'desc')
       .fetch()
 
+    const nextPage = articles.length === 5
+    const posts = nextPage ? articles.slice(0, -1) : nextPage
     return {
-      articles
+      posts, nextPage
     }
   },
   head () {
