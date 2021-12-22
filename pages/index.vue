@@ -22,8 +22,9 @@ export default {
   name: 'Homepage',
   async asyncData ({ $content, params }) {
     const articles = await $content('articles')
-      .only(['title', 'description', 'img', 'slug', 'tags', 'createdAt'])
-      .sortBy('createdAt', 'asc')
+      .only(['title', 'description', 'img', 'slug', 'draft', 'tags', 'createdAt'])
+      .where({ draft: false })
+      .sortBy('createdAt', 'desc')
       .fetch()
 
     return {
