@@ -1,12 +1,35 @@
 <template>
-  <h1>
-    Hello World!
-  </h1>
+  <section>
+    <article v-for="article of articles" :key="article.slug">
+      <img :src="article.img" />
+      <div>
+        <NuxtLink :to="article.slug">
+          <h2>{{ article.title }}</h2>
+        </NuxtLink>
+        <p>{{ article.createdAt }}</p>
+        <p>{{ article.tags }}</p>
+        <p>{{ article.description }}</p>
+        <NuxtLink :to="article.slug">
+          Read Blog Post
+        </NuxtLink>
+      </div>
+    </article>
+  </section>
 </template>
 
 <script>
 export default {
   name: 'Homepage',
+  async asyncData ({ $content, params }) {
+    const articles = await $content('articles')
+      .only(['title', 'description', 'img', 'slug', 'tags', 'createdAt'])
+      .sortBy('createdAt', 'asc')
+      .fetch()
+
+    return {
+      articles
+    }
+  },
   head () {
     return {
       title: '',
