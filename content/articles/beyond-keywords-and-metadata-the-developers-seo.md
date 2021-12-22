@@ -1,7 +1,11 @@
 ---
 title: "Beyond Keywords and Metadata: The Developer's SEO"
 description: "In this article I discuss the role of the developer in SEO"
-date: 2015-04-03T16:47:05-04:00
+createdAt: 2015-04-03T16:47:05-04:00
+tags:
+  - Metadata
+  - SEO
+  - Best Practices
 draft: false
 ---
 Contrary to popular belief, search engine optimization (SEO) responsibilities do not fall solely on the marketing department. From a website's inception through its lifecycle, the developer plays just as much of a role in the site's SEO as the marketing manager. And it's more than just keywords and meta data - site architecture and presentation techniques can drastically impact rankings and traffic as well.

@@ -1,7 +1,13 @@
 ---
 title: "Wordpress Security Tips: Cryptanalytic Attacks"
 description: "Cryptanalytic attacks are one way hackers try to compromise your site. Staying up to date on WordPress security tips can be crucial."
-date: 2013-08-01T22:00:20-04:00
+createdAt: 2013-08-01T22:00:20-04:00
+tags:
+  - Content Management System
+  - WordPress
+  - Security
+  - Responsive Web Design
+  - Best Practices
 draft: false
 ---
 

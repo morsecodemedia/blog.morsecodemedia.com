@@ -1,6 +1,10 @@
 ---
 title: "Microsoft Is Acquiring Github"
-date: 2018-06-05T15:09:46-04:00
+description: "Is the sky really falling, or are we overreacting?"
+createdAt: 2018-06-05T15:09:46-04:00
+tags:
+  - Github
+  - Microsoft
 draft: false
 ---
 

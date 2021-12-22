@@ -1,8 +1,10 @@
 ---
 title: "Is It Time to Drop Support for IE8? - Part 1"
 description: "Deciding which browsers and versions you are going to support for a new website or application is an important step in the web development process."
-date: 2014-02-21T09:46:53-04:00
-draft: true
+createdAt: 2014-02-21T09:46:53-04:00
+tags:
+  - Internet Explorer
+draft: false
 ---
 
 **UPDATE:** Read the follow-up to this article [here][part2].

@@ -1,6 +1,12 @@
 ---
 title: "Architectural Short-Sightedness"
-date: 2018-06-08T13:05:32-04:00
+description: "In the post, I reflect on the most recent hiccup in the smart mirror project that I have been working on in my spare time."
+createdAt: 2018-06-08T13:05:32-04:00
+tags:
+  - git-submodule
+  - Smart Mirror
+  - MorseCodeMirror
+  - NPM
 draft: false
 ---
 
@@ -16,7 +22,7 @@ Usually, I am the team member looking pass the current update. Rather than treat
 
   Luckily, I came across a few articles recently on how to turn Vue components into npm packages. Score! Admittedly, I am prematurely celebrating this new information, as I have yet to actually attempt in doing such. I also don't know if it will actually solve my current issues rather than trading them in for new ones. So keep an eye out, there might be a sequel to this post about how I've fallen victim to committing to a development path wholeheartedly without doing all of my research.
 
-. With that being said, on the surface it does seem like it will solve my dependency management issues. I still need to do some research into the configuration files of each component and how I am going to handle that. My hope is that I can keep the empty structure for each as the default, and if any of those settings are set in the main project's config file, it will use those values instead. Also, I need to see how navigation between components will work. At the moment they were going to be treated like their own "pages" inside of the app, but now it ,ight be a single "page" with the content dynamically loaded, as needed.
+. With that being said, on the surface it does seem like it will solve my dependency management issues. I still need to do some research into the configuration files of each component and how I am going to handle that. My hope is that I can keep the empty structure for each as the default, and if any of those settings are set in the main project's config file, it will use those values instead. Also, I need to see how navigation between components will work. At the moment they were going to be treated like their own "pages" inside of the app, but now it might be a single "page" with the content dynamically loaded, as needed.
 
   If you want to follow along with the progress of the smart mirror, I will be documenting my progress, pitfalls and other random thoughts on this blog. You can read the start of the project [here][sm]. You can check out the code on [Github][ghsm] or [GitLab][glsm]
 

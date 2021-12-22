@@ -1,7 +1,10 @@
 ---
 title: "Are You Taking Your Website Security Seriously?"
 description: "Begin building your toolbox needed to keep your website secure with this dive into website security."
-date: 2015-05-03T15:14:20-04:00
+createdAt: 2015-05-03T15:14:20-04:00
+tags:
+	- Security
+	- Best Practices
 draft: false
 ---
 The Internet wasn't built so it was easier for you to watch cat videos. The Internet is an apparatus, spearheading the connection revolution, where anyone with a laptop or smartphone is connected to everyone else with just a few clicks. These conveniences wield great power, and with that, great responsibility. This responsibility is to protect our own, as well as our customer's, information.

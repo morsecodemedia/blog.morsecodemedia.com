@@ -1,7 +1,14 @@
 ---
 title: "Choosing a CMS Solution for Your Website"
 description: "Lay out all of the essentials that will need to be met in order to select a content management system that will ensure success for your project."
-date: 2015-01-16T08:54:16-04:00
+createdAt: 2015-01-16T08:54:16-04:00
+tags:
+  - Content Management System
+  - WordPress
+  - ProcessWire
+  - ExpressionEngine
+  - Magento
+  - Responsive Web Design
 draft: false
 ---
 

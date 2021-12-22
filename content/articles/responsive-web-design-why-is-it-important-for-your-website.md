@@ -1,6 +1,9 @@
 ---
 title: "Responsive Web Design: Why Is It Important for Your Website"
-date: 2013-01-24T09:38:06-04:00
+createdAt: 2013-01-24T09:38:06-04:00
+tags:
+  - Responsive Web Design
+  - SEO
 draft: false
 ---
 
@@ -8,9 +11,9 @@ The approach towards design and user experience has changed greatly, thanks to s
 
 ## So What is Responsive Web Design
 
-> Responsive web design (often abbreviated RWD) is an approach to web design in which a site is crafeted to provide an optimal viewing experience &ndash; easy reading and navigation with minimum of resigning, panning, and scrolling &ndash; across a wide range of devices (from desktop computer monitors to mobile phones). ([Source: Wikipedia, 2013][Wikipedia])
+> Responsive web design (often abbreviated RWD) is an approach to web design in which a site is crafted to provide an optimal viewing experience &ndash; easy reading and navigation with minimum of resigning, panning, and scrolling &ndash; across a wide range of devices (from desktop computer monitors to mobile phones). ([Source: Wikipedia, 2013][Wikipedia])
 
-Websites are designed with users in mind, bu the users' experience depends on what their brwoser understands. Responisive websites _respond_ to their environment. We are only at the tip of the iceberg as far as creating adaptive experiences go. With more devices coming out each day, we need to step up and meet our users where they are.
+Websites are designed with users in mind, bu the users' experience depends on what their browser understands. Responsive websites _respond_ to their environment. We are only at the tip of the iceberg as far as creating adaptive experiences go. With more devices coming out each day, we need to step up and meet our users where they are.
 
 > "Day by day, the number of devices, platforms, and browsers that need to work with your site grows. Responsive web design represents a fundamental shift in how we'll build websites for the decade to come." – Jeffery Veen
 
