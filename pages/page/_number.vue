@@ -1,17 +1,15 @@
 <template>
   <section>
     <article v-for="post of posts" :key="post.slug">
-      <div>
-        <nuxt-link :to="`/${post.slug}`">
-          <h2>{{ post.title }}</h2>
-        </nuxt-link>
-        <p>{{ formatDate(post.createdAt) }}</p>
-        <p>{{ post.tags }}</p>
-        <p>{{ post.description }}</p>
-        <nuxt-link :to="`/${post.slug}`">
-          Read Blog Post
-        </nuxt-link>
-      </div>
+      <nuxt-link :to="`/${post.slug}`">
+        <h2 class="title">{{ post.title }}</h2>
+      </nuxt-link>
+      <p class="date">{{ formatDate(post.createdAt) }}</p>
+      <p class="tags">Posted in: {{ post.tags }}</p>
+      <p>{{ post.description }}</p>
+      <nuxt-link :to="`/${post.slug}`">
+        Read Blog Post
+      </nuxt-link>
     </article>
     <div>
       <nuxt-link :to="prevLink">Prev page</nuxt-link>

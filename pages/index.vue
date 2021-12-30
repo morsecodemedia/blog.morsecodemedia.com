@@ -1,17 +1,15 @@
 <template>
   <section>
     <article v-for="post of posts" :key="post.slug">
-      <div>
-        <nuxt-link :to="`/${post.slug}`">
-          <h2>{{ post.title }}</h2>
-        </nuxt-link>
-        <p>{{ formatDate(post.createdAt) }}</p>
-        <p>{{ post.tags }}</p>
-        <p>{{ post.description }}</p>
-        <nuxt-link :to="`/${post.slug}`">
-          Read Blog Post
-        </nuxt-link>
-      </div>
+      <nuxt-link :to="`/${post.slug}`">
+        <h2 class="title">{{ post.title }}</h2>
+      </nuxt-link>
+      <p class="date">{{ formatDate(post.createdAt) }}</p>
+      <p class="tags">Posted in: {{ post.tags }}</p>
+      <p>{{ post.description }}</p>
+      <nuxt-link :to="`/${post.slug}`">
+        Read Blog Post
+      </nuxt-link>
     </article>
     <div v-if="nextPage" id="next">
       <nuxt-link to="/page/2">
@@ -67,5 +65,33 @@ export default {
 </script>
 
 <style>
-
+.title {
+  font-family: 'Montserrat',sans-serif,Arial;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+  font-size: 30px;
+  line-height: 1.2;
+  text-align: left;
+  width: 660px;
+  max-width: 90%;
+}
+.date {
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.tags {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+p {
+  font-family: 'Libre Baskerville', sans-serif, Arial;
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+article {
+  margin-bottom: 30px;
+}
 </style>
