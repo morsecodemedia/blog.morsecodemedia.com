@@ -7,7 +7,7 @@ tags:
   - Certifications
   - AWS
   - Education
-draft: true
+draft: false
 ---
 **Updated 2021-12-22 12:40:00 -0500**
 
@@ -26,7 +26,11 @@ I got certified.
 I got busy on other projects.
 I had some life events.
 
-Here's the kicker - as we are about to wrap up 2021 - I haven't written a new Alexa skill since that day. I do use Alexas more regularly though - mostly to read Audible books to me, but it's something.
+As we are about to wrap up 2021 - I haven't written a new Alexa skill since that
+day. I do use Alexas more regularly though - mostly to read Audible books to me,
+but it's something. I suppose I will get back into Alexa development in the
+future, as I continue my journey in accessibility and overall inclusiveness
+(both digitally and in real life).
 
 
 <!--  vim: set shiftwidth=4 tabstop=4 expandtab: -->
