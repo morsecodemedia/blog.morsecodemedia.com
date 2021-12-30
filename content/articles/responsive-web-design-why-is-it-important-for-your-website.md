@@ -2,8 +2,8 @@
 title: "Responsive Web Design: Why Is It Important for Your Website"
 createdAt: 2013-01-24T09:38:06-04:00
 tags:
-  - Responsive Web Design
-  - SEO
+  - responsive web design
+  - seo
 draft: false
 ---
 

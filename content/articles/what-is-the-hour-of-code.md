@@ -3,8 +3,8 @@ title: "What Is the Hour of Code"
 description: "Last month, the Hour of Code initiative brought a lot of attention to fixing computer science education in the US. But what was it and why should you care?"
 createdAt: 2014-01-13T17:00:01-04:00
 tags:
-  - Hour of Code
-  - Education
+  - hour of code
+  - education
 draft: false
 ---
 

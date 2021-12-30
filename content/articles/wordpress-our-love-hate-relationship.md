@@ -3,10 +3,10 @@ title: "Wordpress: Our Love/Hate Relationship"
 description: "WordPress is a very widely used and well liked CMS, but it also has its weaknesses. These are just a few of the things I love and hate about WordPress."
 createdAt: 2013-09-23T21:52:43-04:00
 tags:
-  - Content Management System
-  - WordPress
-  - Security
-  - Plugins
+  - content management system
+  - wordpress
+  - security
+  - plugins
 draft: false
 ---
 

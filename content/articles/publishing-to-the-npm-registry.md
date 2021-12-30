@@ -2,7 +2,7 @@
 title: "Publishing to the npm Registry"
 createdAt: 2018-06-13T09:27:07-04:00
 tags:
-  - NPM
+  - npm
 draft: false
 ---
 

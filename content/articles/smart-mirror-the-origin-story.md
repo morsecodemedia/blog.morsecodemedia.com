@@ -2,8 +2,8 @@
 title: "Smart Mirror: The Origin Story"
 createdAt: 2018-05-03T10:12:53-04:00
 tags:
-  - Smart Mirror
-  - MorseCodeMirror
+  - smart mirror
+  - morsecodemirror
 draft: false
 ---
 

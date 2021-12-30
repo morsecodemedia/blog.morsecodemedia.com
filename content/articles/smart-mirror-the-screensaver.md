@@ -2,10 +2,10 @@
 title: "Smart Mirror: The Screensaver"
 createdAt: 2018-05-09T21:56:34-04:00
 tags:
-  - Smart Mirror
-  - MorseCodeMirror
-  - Screensaver
-  - GreenSock
+  - smart mirror
+  - morsecodemirror
+  - screensaver
+  - greensock
 draft: false
 ---
 

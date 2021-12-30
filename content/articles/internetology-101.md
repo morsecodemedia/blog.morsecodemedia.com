@@ -3,8 +3,8 @@ title: "Internetology 101"
 description: "Here I delve into the basics of the internet, including history and helpful definitions."
 createdAt: 2015-04-15T14:44:32-04:00
 tags:
-  - Terminology
-  - Education
+  - terminology
+  - education
 draft: false
 ---
 Welcome to the Internet! I'll be here to guide you from the very beginning all the way down to domain names and URLs.

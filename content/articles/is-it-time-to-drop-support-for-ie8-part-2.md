@@ -3,7 +3,7 @@ title: "Is It Time to Drop Support for IE8? - Part 2"
 description: "In this article I revisit my take on Internet Explorer 8 and why it needs to be left in the rearview mirror."
 createdAt: 2015-03-18T08:57:00-04:00
 tags:
-  - Internet Explorer
+  - internet explorer
 draft: false
 ---
 

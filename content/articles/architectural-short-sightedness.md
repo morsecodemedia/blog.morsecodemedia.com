@@ -4,9 +4,9 @@ description: "In the post, I reflect on the most recent hiccup in the smart mirr
 createdAt: 2018-06-08T13:05:32-04:00
 tags:
   - git-submodule
-  - Smart Mirror
-  - MorseCodeMirror
-  - NPM
+  - smart mirror
+  - morsecodemirror
+  - npm
 draft: false
 ---
 

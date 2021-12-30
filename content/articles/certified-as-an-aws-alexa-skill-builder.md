@@ -3,10 +3,10 @@ createdAt: 2019-05-23 12:51:32 -0400
 title: "Certified as an AWS Alexa Skill Builder"
 description: "In this post I recount the events that lead me from never interacting with an Alexa device to becoming a certified Alexa Skill Builder."
 tags:
-  - Alexa
-  - Certifications
-  - AWS
-  - Education
+  - alexa
+  - certifications
+  - aws
+  - education
 draft: false
 ---
 **Updated 2021-12-22 12:40:00 -0500**

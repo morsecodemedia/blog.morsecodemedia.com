@@ -3,10 +3,10 @@ createdAt: 2020-12-03 04:51:32 -0400
 title: "IAAP Certified Professional in Accessibility Core Competencies"
 description: "WRITE A DESCRIPTION BEFORE POSTING"
 tags:
-  - Accessibility
-  - Certifications
-  - IAAP
-  - Education
+  - accessibility
+  - certifications
+  - iaap
+  - education
 draft: true
 ---
 // TODO: ADD BADGE content/articles/iaap-certified-professional-in-accessibilitiy-core-competencies/iaap-cpacc-certification-badge.jpg
