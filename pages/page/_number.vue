@@ -2,15 +2,15 @@
   <section>
     <article v-for="post of posts" :key="post.slug">
       <div>
-        <NuxtLink :to="post.slug">
+        <nuxt-link :to="`/${post.slug}`">
           <h2>{{ post.title }}</h2>
-        </NuxtLink>
-        <p>{{ post.createdAt }}</p>
+        </nuxt-link>
+        <p>{{ formatDate(post.createdAt) }}</p>
         <p>{{ post.tags }}</p>
         <p>{{ post.description }}</p>
-        <NuxtLink :to="post.slug">
+        <nuxt-link :to="`/${post.slug}`">
           Read Blog Post
-        </NuxtLink>
+        </nuxt-link>
       </div>
     </article>
     <div>
@@ -42,6 +42,12 @@ export default {
   computed: {
     prevLink () {
       return this.pageNo === 2 ? '/' : `/page/${this.pageNo - 1}`
+    }
+  },
+  methods: {
+    formatDate (date) {
+      const options = { year: 'numeric', month: 'long', day: 'numeric' }
+      return new Date(date).toLocaleDateString('en', options)
     }
   }
 }

@@ -2,21 +2,21 @@
   <section>
     <article v-for="post of posts" :key="post.slug">
       <div>
-        <NuxtLink :to="post.slug">
+        <nuxt-link :to="`/${post.slug}`">
           <h2>{{ post.title }}</h2>
-        </NuxtLink>
-        <p>{{ post.createdAt }}</p>
+        </nuxt-link>
+        <p>{{ formatDate(post.createdAt) }}</p>
         <p>{{ post.tags }}</p>
         <p>{{ post.description }}</p>
-        <NuxtLink :to="post.slug">
+        <nuxt-link :to="`/${post.slug}`">
           Read Blog Post
-        </NuxtLink>
+        </nuxt-link>
       </div>
     </article>
-    <div id="next" v-if="nextPage">
-      <NuxtLink to="/page/2">
+    <div v-if="nextPage" id="next">
+      <nuxt-link to="/page/2">
         Next Page
-      </NuxtLink>
+      </nuxt-link>
     </div>
   </section>
 </template>
@@ -36,6 +36,12 @@ export default {
     const posts = nextPage ? articles.slice(0, -1) : nextPage
     return {
       posts, nextPage
+    }
+  },
+  methods: {
+    formatDate (date) {
+      const options = { year: 'numeric', month: 'long', day: 'numeric' }
+      return new Date(date).toLocaleDateString('en', options)
     }
   },
   head () {
