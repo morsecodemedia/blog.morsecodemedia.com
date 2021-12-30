@@ -28,7 +28,7 @@ export default {
       .only(['title', 'description', 'createdAt', 'draft', 'slug', 'tags'])
       .sortBy('createdAt', 'desc')
       .limit(5)
-      .skip(8 * (pageNo - 1))
+      .skip(4 * (pageNo - 1))
       .fetch()
 
     if (!articles.length) {
