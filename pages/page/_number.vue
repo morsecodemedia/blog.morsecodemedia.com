@@ -4,7 +4,7 @@
       <nuxt-link :to="`/${post.slug}`">
         <h2 class="title">{{ post.title }}</h2>
       </nuxt-link>
-      <p class="date">{{ formatDate(post.createdAt) }}</p>
+      <p class="date">{{ $format(post.createdAt) }}</p>
       <p class="tags">Posted in: {{ post.tags }}</p>
       <p>{{ post.description }}</p>
       <nuxt-link :to="`/${post.slug}`">
@@ -40,12 +40,6 @@ export default {
   computed: {
     prevLink () {
       return this.pageNo === 2 ? '/' : `/page/${this.pageNo - 1}`
-    }
-  },
-  methods: {
-    formatDate (date) {
-      const options = { year: 'numeric', month: 'long', day: 'numeric' }
-      return new Date(date).toLocaleDateString('en', options)
     }
   }
 }
