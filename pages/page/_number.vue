@@ -25,15 +25,15 @@ export default {
     const articles = await $content('articles')
       .only(['title', 'description', 'createdAt', 'draft', 'slug', 'tags'])
       .sortBy('createdAt', 'desc')
-      .limit(5)
-      .skip(4 * (pageNo - 1))
+      .limit(10)
+      .skip(9 * (pageNo - 1))
       .fetch()
 
     if (!articles.length) {
       return error({ statusCode: 404, message: 'No posts found!' })
     }
 
-    const nextPage = articles.length === 5
+    const nextPage = articles.length === 10
     const posts = nextPage ? articles.slice(0, -1) : articles
     return { nextPage, posts, pageNo }
   },

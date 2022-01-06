@@ -36,7 +36,8 @@ export default {
   plugins: [
     { mode: 'client', src: '~/plugins/focus-trap.js' },
     { mode: 'client', src: '~/plugins/exit-link.js' },
-    { mode: 'client', src: '~/plugins/vh.js' }
+    { mode: 'client', src: '~/plugins/vh.js' },
+    { mode: 'client', src: '~/plugins/format.js' }
   ],
   /*
   ** Nuxt.js dev-modules

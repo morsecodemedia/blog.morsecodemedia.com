@@ -1,7 +1,7 @@
 
 <template>
   <section>
-    <h1>Articles posted in {{ tag.alt }}</h1>
+    <h1>Articles posted in {{ tag.alt }} ({{ tag.length }})</h1>
     <article v-for="post of posts" :key="post.slug">
       <nuxt-link :to="`/${post.slug}`">
         <h2 class="title">{{ post.title }}</h2>

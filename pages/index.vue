@@ -4,7 +4,7 @@
       <nuxt-link :to="`/${post.slug}`">
         <h2 class="title">{{ post.title }}</h2>
       </nuxt-link>
-      <p class="date">{{ formatDate(post.createdAt) }}</p>
+      <p class="date">{{ $format(post.createdAt) }}</p>
       <p class="tags">Posted in: {{ post.tags }}</p>
       <p>{{ post.description }}</p>
       <nuxt-link :to="`/${post.slug}`">
@@ -26,20 +26,14 @@ export default {
     const articles = await $content('articles')
       .only(['title', 'description', 'img', 'slug', 'draft', 'tags', 'createdAt'])
       .where({ draft: false })
-      .limit(5)
+      .limit(10)
       .sortBy('createdAt', 'desc')
       .fetch()
 
-    const nextPage = articles.length === 5
+    const nextPage = articles.length === 10
     const posts = nextPage ? articles.slice(0, -1) : nextPage
     return {
       posts, nextPage
-    }
-  },
-  methods: {
-    formatDate (date) {
-      const options = { year: 'numeric', month: 'long', day: 'numeric' }
-      return new Date(date).toLocaleDateString('en', options)
     }
   },
   head () {
