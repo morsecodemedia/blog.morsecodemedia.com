@@ -1,12 +1,12 @@
 
 <template>
   <section>
-    <h1>Articles posted in {{ tag.alt }} ({{ tag.length }})</h1>
+    <h1>Articles posted in {{ tag.alt }} (todo: tag.length)</h1>
     <article v-for="post of posts" :key="post.slug">
       <nuxt-link :to="`/${post.slug}`">
         <h2 class="title">{{ post.title }}</h2>
       </nuxt-link>
-      <p class="date">{{ formatDate(post.createdAt) }}</p>
+      <p class="date">{{ $format(post.createdAt) }}</p>
       <p>{{ post.description }}</p>
       <nuxt-link :to="`/${post.slug}`">
         Read Blog Post
@@ -37,12 +37,6 @@ export default {
     return {
       posts,
       tag
-    }
-  },
-  methods: {
-    formatDate (date) {
-      const options = { year: 'numeric', month: 'long', day: 'numeric' }
-      return new Date(date).toLocaleDateString('en', options)
     }
   },
   head () {
