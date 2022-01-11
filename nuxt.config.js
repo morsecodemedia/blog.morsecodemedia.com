@@ -5,11 +5,19 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: process.env.npm_package_name || '',
+    title: 'Technical writings of Brandon Morse | a morsecodemedia project',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      { hid: 'ogtitle', property: 'og:title', content: 'Technical writings of Brandon Morse | a morsecodemedia project' },
+      { hid: 'twtitle', name: 'twitter:title', content: 'Technical writings of Brandon Morse | a morsecodemedia project' },
+      { hid: 'googlename', itemprop: 'name', content: 'Technical writings of Brandon Morse | a morsecodemedia project' },
+      { hid: 'description', name: 'description', content: '' },
+      { hid: 'ogdescription', property: 'og:description', content: '' },
+      { hid: 'twdescription', name: 'twitter:description', content: '' },
+      { hid: 'googledescription', itemprop: 'description', content: '' },
+      { hid: 'ogurl', property: 'og:url', content: 'https://blog.morsecodemedia.com' },
+      { hid: 'twsite', name: 'twitter:site', content: 'https://blog.morsecodemedia.com' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -17,7 +25,8 @@ export default {
       { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
       { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
       { rel: 'icon', type: 'image/png', sizes: '192x192', href: '/favicon-192x192.png' },
-      { rel: 'icon', type: 'image/png', sizes: '512x512', href: '/favicon-512x512.png' }
+      { rel: 'icon', type: 'image/png', sizes: '512x512', href: '/favicon-512x512.png' },
+      { hid: 'canonical', rel: 'canonical', href: 'https://blog.morsecodemedia.com' }
     ]
   },
   /*
@@ -58,7 +67,7 @@ export default {
     '@nuxt/content'
   ],
   sitemap: {
-    hostname: 'https://www.domain.com',
+    hostname: 'https://blog.morsecodemedia.com',
     gzip: true,
     trailingSlash: true,
     defaults: {
@@ -76,7 +85,7 @@ export default {
   },
   robots: {
     UserAgent: '*',
-    Sitemap: 'https://www.domain.com/sitemap.xml'
+    Sitemap: 'https://blog.morsecodemedia.com/sitemap.xml'
   },
   redirect: [],
   /*

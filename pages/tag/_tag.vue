@@ -41,21 +41,15 @@ export default {
   },
   head () {
     return {
-      title: '',
+      title: 'Posts tagged under ' + this.tag.alt,
       meta: [
-        { hid: 'ogtitle', property: 'og:title', content: '' },
-        { hid: 'twtitle', name: 'twitter:title', content: '' },
-        { hid: 'googlename', itemprop: 'name', content: '' },
-        { hid: 'description', name: 'description', content: '' },
-        { hid: 'ogdescription', property: 'og:description', content: '' },
-        { hid: 'twdescription', name: 'twitter:description', content: '' },
-        { hid: 'googledescription', itemprop: 'description', content: '' },
-        { hid: 'ogurl', property: 'og:url', content: 'https://www.domain.com' + this.$route.path },
-        { hid: 'twsite', name: 'twitter:site', content: 'https://www.domain.com' + this.$route.path }
+        { hid: 'ogtitle', property: 'og:title', content: 'Post tagged under ' + this.tag.alt },
+        { hid: 'twtitle', name: 'twitter:title', content: 'Post tagged under ' + this.tag.alt },
+        { hid: 'googlename', itemprop: 'name', content: 'Post tagged under ' + this.tag.alt }
       ],
-      link: [
-        { hid: 'canonical', rel: 'canonical', href: 'https://www.domain.com' + this.$route.path }
-      ]
+      bodyAttrs: {
+        class: 'page-' + ((this.$route.path.length > 1) ? this.$route.path.slice(1).replace(new RegExp('/$'), '').replace(new RegExp('/', 'g'), '-') : 'home')
+      }
     }
   }
 }

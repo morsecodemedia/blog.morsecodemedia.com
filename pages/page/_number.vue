@@ -48,6 +48,19 @@ export default {
     prevLink () {
       return this.pageNo === 2 ? '/' : `/page/${this.pageNo - 1}`
     }
+  },
+  head () {
+    return {
+      title: 'Technical writings of Brandon Morse - Page ' + this.pageNo + ' | a morsecodemedia project',
+      meta: [
+        { hid: 'ogtitle', property: 'og:title', content: 'Technical writings of Brandon Morse - Page ' + this.pageNo + ' | a morsecodemedia project' },
+        { hid: 'twtitle', name: 'twitter:title', content: 'Technical writings of Brandon Morse - Page ' + this.pageNo + ' | a morsecodemedia project' },
+        { hid: 'googlename', itemprop: 'name', content: 'Technical writings of Brandon Morse - Page ' + this.pageNo + ' | a morsecodemedia project' }
+      ],
+      bodyAttrs: {
+        class: 'page-' + ((this.$route.path.length > 1) ? this.$route.path.slice(1).replace(new RegExp('/$'), '').replace(new RegExp('/', 'g'), '-') : 'home')
+      }
+    }
   }
 }
 </script>
