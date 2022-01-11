@@ -7,6 +7,7 @@
         <h2 class="title">{{ post.title }}</h2>
       </nuxt-link>
       <p class="date">{{ $format(post.createdAt) }}</p>
+      <p>{{ post.readingStats.text }}</p>
       <p>{{ post.description }}</p>
       <nuxt-link :to="`/${post.slug}`">
         Read Blog Post
@@ -27,7 +28,6 @@ export default {
       .fetch()
     const tag = tags.length > 0 ? tags[0] : {}
     const posts = await $content('articles', params.slug)
-      .only(['title', 'description', 'img', 'slug', 'draft', 'tags', 'createdAt'])
       .where({
         draft: false,
         tags: { $contains: tag.name }

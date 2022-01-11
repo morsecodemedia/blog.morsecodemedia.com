@@ -13,6 +13,7 @@
           </nuxt-link>
         </li>
       </ul>
+      <p>{{ post.readingStats.text }}</p>
       <p>{{ post.description }}</p>
       <nuxt-link :to="`/${post.slug}`">
         Read Blog Post
@@ -31,7 +32,6 @@ export default {
   name: 'Homepage',
   async asyncData ({ $content, params }) {
     const articles = await $content('articles')
-      .only(['title', 'description', 'img', 'slug', 'draft', 'tags', 'createdAt'])
       .where({ draft: false })
       .limit(10)
       .sortBy('createdAt', 'desc')

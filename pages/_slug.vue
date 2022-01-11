@@ -1,8 +1,15 @@
 <template>
   <article>
     <h1>{{ article.title }}</h1>
-    <p class="date">{{ article.createdAt }}</p>
+    <p class="date">{{ $format(article.createdAt) }}</p>
     <p class="tags">Posted in:</p>
+    <ul v-if="article.tags">
+      <li v-for="(t, index) in article.tags" :key="index">
+        <nuxt-link :to="`/tag/${t.replace(' ', '-')}`">
+          {{ t }}
+        </nuxt-link>
+      </li>
+    </ul>
     <p>{{ article.readingStats.text }}</p>
     <nuxt-content :document="article" />
   </article>
