@@ -111,6 +111,8 @@ export default {
             document[_key] = value.toLocaleLowerCase()
           }
         })
+        const stats = require('reading-time')(document.text)
+        document.readingStats = stats
       }
     }
   }

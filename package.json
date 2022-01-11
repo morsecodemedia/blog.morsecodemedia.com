@@ -29,7 +29,8 @@
     "@nuxtjs/sitemap": "^2.3.2",
     "express": "^4.17.1",
     "focus-trap-vue": "^1.1.1",
-    "nuxt": "^2.0.0"
+    "nuxt": "^2.0.0",
+    "reading-time": "^1.5.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^3.0.0",

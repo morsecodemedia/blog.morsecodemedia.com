@@ -3,6 +3,7 @@
     <h1>{{ article.title }}</h1>
     <p class="date">{{ article.createdAt }}</p>
     <p class="tags">Posted in:</p>
+    <p>{{ article.readingStats.text }}</p>
     <nuxt-content :document="article" />
   </article>
 </template>
