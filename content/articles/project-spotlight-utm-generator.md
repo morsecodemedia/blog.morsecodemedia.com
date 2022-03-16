@@ -4,7 +4,6 @@ description: "In the post, I talk about one of my side projects, the UTM Generat
 createdAt: 2021-06-29T10:55:32-04:00
 tags:
   - analytics
-  - vue.js
 draft: true
 ---
 

@@ -4,7 +4,6 @@ description: "In the post, I talk about one of my side projects, the Color Contr
 createdAt: 2021-07-01T13:05:32-04:00
 tags:
   - accessibility
-  - vue.js
 draft: true
 ---
 
