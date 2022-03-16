@@ -9,7 +9,6 @@ tags:
   - education
 draft: false
 ---
-**Updated 2021-12-22 12:40:00 -0500**
 
 I'm sure I had every intention of writing a detailed post about the curriculum and how hard the exam was, etc. Clearly that didn't happen, as I am migrating my blog to a new platform and I only see a blank document in front of me. Here's the recap of my journey from never interacting with an Alexa device to becoming a certified builder.
 
