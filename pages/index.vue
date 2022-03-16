@@ -8,14 +8,14 @@
         <p class="date">{{ $format(post.createdAt) }}</p>
         <p>{{ post.readingStats.text }}</p>
       </div>
-      <p class="tags">Posted in:</p>
+      <!-- <p class="tags">Posted in:</p>
       <ul v-if="post.tags">
         <li v-for="(t, index) in post.tags" :key="index">
           <nuxt-link :to="`/tag/${t.replace(' ', '-')}`">
             {{ t }}
           </nuxt-link>
         </li>
-      </ul>
+      </ul> -->
       <p>{{ post.description }}</p>
       <nuxt-link :to="`/${post.slug}`">
         Read Blog Post

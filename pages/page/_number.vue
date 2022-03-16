@@ -4,7 +4,10 @@
       <nuxt-link :to="`/${post.slug}`">
         <h2 class="title">{{ post.title }}</h2>
       </nuxt-link>
-      <p class="date">{{ $format(post.createdAt) }}</p>
+      <div class="article-stats">
+        <p class="date">{{ $format(post.createdAt) }}</p>
+        <p>{{ post.readingStats.text }}</p>
+      </div>
       <p class="tags">Posted in:</p>
       <ul v-if="post.tags">
         <li v-for="(t, index) in post.tags" :key="index">
@@ -13,7 +16,6 @@
           </nuxt-link>
         </li>
       </ul>
-      <p>{{ post.readingStats.text }}</p>
       <p>{{ post.description }}</p>
       <nuxt-link :to="`/${post.slug}`">
         Read Blog Post

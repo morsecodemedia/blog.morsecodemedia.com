@@ -73,15 +73,19 @@ article {
     display: flex;
     align-items: center;
     gap: 1em;
+    padding: 10px 0;
     &::before {
       content: '';
-      border: 2px solid var(--black);
+      border: 2px solid var(--grey-6c);
       border-radius: 50%;
       align-self: center;
     }
     p {
       margin: 0;
       padding: 0;
+      color: var(--grey-6c);
+      font-size: 14px;
+      text-transform: uppercase;
       &.date {
         order: -1;
       }
