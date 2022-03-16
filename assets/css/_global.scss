@@ -64,3 +64,27 @@
 		transform: translateX(-1000);
 	}
 }
+
+article {
+  padding: 0 5%;
+  max-width: 1000px;
+  margin: 0 auto;
+  .article-stats {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    &::before {
+      content: '';
+      border: 2px solid var(--black);
+      border-radius: 50%;
+      align-self: center;
+    }
+    p {
+      margin: 0;
+      padding: 0;
+      &.date {
+        order: -1;
+      }
+    }
+  }
+}
