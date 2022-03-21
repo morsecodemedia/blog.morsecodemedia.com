@@ -8,22 +8,14 @@
         <p class="date">{{ $format(post.createdAt) }}</p>
         <p>{{ post.readingStats.text }}</p>
       </div>
-      <p class="tags">Posted in:</p>
-      <ul v-if="post.tags">
-        <li v-for="(t, index) in post.tags" :key="index">
-          <nuxt-link :to="`/tag/${t.replace(' ', '-')}`">
-            {{ t }}
-          </nuxt-link>
-        </li>
-      </ul>
       <p>{{ post.description }}</p>
-      <nuxt-link :to="`/${post.slug}`">
+      <nuxt-link :to="`/${post.slug}`" class="link-read" :aria-label="`Read ${post.title}`">
         Read Blog Post
       </nuxt-link>
     </article>
-    <div>
-      <nuxt-link :to="prevLink">Prev page</nuxt-link>
-      <nuxt-link v-if="nextPage" :to="`/page/${pageNo + 1}`">Next page</nuxt-link>
+    <div class="pagination-links">
+      <nuxt-link :to="prevLink" aria-label="Previous Page">Previous page</nuxt-link>
+      <nuxt-link v-if="nextPage" :to="`/page/${pageNo + 1}`" aria-label="Next Page">Next page</nuxt-link>
     </div>
   </section>
 </template>
