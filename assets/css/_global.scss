@@ -66,9 +66,43 @@
 }
 
 article {
-  padding: 0 5%;
-  max-width: 1000px;
+  padding: 25px 5% 75px;
+  max-width: 992px;
   margin: 0 auto;
+  position: relative;
+  &::after {
+    content: '';
+    position: relative;
+    width: 50%;
+    display: block;
+    height: 1px;
+    background-color: var(--blue);
+    margin: 0 auto;
+    bottom: -50px;
+  }
+  .title {
+    font-family: 'Montserrat',sans-serif,Arial;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+    font-size: 30px;
+    line-height: 1.2;
+    text-align: left;
+    width: 660px;
+    max-width: 90%;
+    color: var(--blue);
+  }
+  .tags {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  p {
+    font-family: 'Libre Baskerville', sans-serif, Arial;
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: 400;
+    margin: 0 0 25px 0;
+    padding: 0;
+  }
   .article-stats {
     display: flex;
     align-items: center;
@@ -82,13 +116,68 @@ article {
     }
     p {
       margin: 0;
-      padding: 0;
       color: var(--grey-6c);
-      font-size: 14px;
+      font-size: 16px;
       text-transform: uppercase;
       &.date {
         order: -1;
       }
+    }
+  }
+  .link-title {
+    color: var(--blue);
+    text-decoration: none;
+    &:focus,
+    &:hover,
+    &:visited {
+      outline: 2px dotted var(--blue);
+      text-decoration: underline;
+    }
+  }
+  .link-read {
+    font-size: 18px;
+    padding: 10px 15px;
+    background-color: var(--blue);
+    border-radius: 25px;
+    border: 1px solid var(--blue);
+    color: var(--white);
+    font-weight: 600;
+    text-decoration: none;
+    &:focus,
+    &:hover {
+      outline: 2px dotted var(--black);
+      background-color: var(--white);
+      border: 1px solid var(--blue);
+      color: var(--blue);
+      text-decoration: underline;
+    }
+  }
+}
+
+.pagination-links {
+  padding: 25px 5%;
+  max-width: 992px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  a {
+    font-size: 18px;
+    padding: 10px 15px;
+    background-color: var(--blue);
+    border-radius: 25px;
+    border: 1px solid var(--blue);
+    color: var(--white);
+    font-weight: 600;
+    text-decoration: none;
+    &:focus,
+    &:hover {
+      outline: 2px dotted var(--black);
+      background-color: var(--white);
+      border: 1px solid var(--blue);
+      color: var(--blue);
+      text-decoration: underline;
     }
   }
 }
