@@ -3,6 +3,7 @@
     <div id="skip">
       <a class="skip-main" href="#main">Skip to main content</a>
     </div>
+    <SiteHeader aria-label="site header" />
     <nuxt
       id="main"
       ref="main"
@@ -15,6 +16,7 @@
 
 <script>
 import { mapGetters } from 'vuex'
+import SiteHeader from '~/components/global/site-header.vue'
 import ModalExit from '~/components/global/modal-exit.vue'
 
 let bodyTag = null
@@ -22,7 +24,8 @@ let bodyTag = null
 export default {
   name: 'App',
   components: {
-    ModalExit
+    ModalExit,
+    SiteHeader
   },
   computed: {
     ...mapGetters('modals', ['isModalOpen'])
