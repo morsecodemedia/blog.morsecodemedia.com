@@ -1,5 +1,5 @@
 ---
-createdAt: 2015-04-15T14:44:32-04:00
+createdAt: 2015-04-15 14:44:32 -0400
 title: "Internetology 101"
 description: "Here I delve into the basics of the internet, including history and helpful definitions."
 tags:

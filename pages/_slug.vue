@@ -3,7 +3,7 @@
     <h1 class="title">{{ article.title }}</h1>
     <div class="article-stats">
       <p class="date">{{ $format(article.createdAt) }}</p>
-      <p>{{ article.readingStats.text }}</p>
+      <p v-if="article.readingStats">{{ article.readingStats.text }}</p>
     </div>
     <nuxt-content :document="article" />
   </article>
