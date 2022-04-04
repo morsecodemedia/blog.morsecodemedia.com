@@ -1,0 +1,224 @@
+#main,
+#main:active,
+#main:focus {
+  outline: 0px solid transparent;
+}
+
+#skip a {
+  display: block;
+  position: absolute;
+  left: -999px;
+  top: -999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  &:focus {
+    left: auto;
+    top: auto;
+    width: 30%;
+    height: auto;
+    overflow: auto;
+    margin: 10px 35%;
+    color: #000000;
+    background-color: #ffffff;
+    padding: 5px;
+    border-radius: 15px;
+    border: 4px solid #000000;
+    text-align: center;
+    font-size: 1.2em;
+    z-index: 999;
+  }
+}
+
+.killscroll {
+  overflow: hidden;
+}
+
+.accessible {
+	position: absolute;
+	overflow: hidden;
+	width: 1px;
+	height: 1px;
+	opacity: 0;
+	transform: translateX(-1000);
+}
+
+@media screen and (max-width: 767px) {
+	.accessible-mobile {
+		position: absolute;
+		overflow: hidden;
+		width: 1px;
+		height: 1px;
+		opacity: 0;
+		transform: translateX(-1000);
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.accessible-desktop {
+		position: absolute;
+		overflow: hidden;
+		width: 1px;
+		height: 1px;
+		opacity: 0;
+		transform: translateX(-1000);
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat',sans-serif,Arial;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 26px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 22px;
+}
+
+
+h6 {
+  font-size: 20px;
+}
+
+article {
+  padding: 25px 5% 75px;
+  max-width: 992px;
+  margin: 0 auto;
+  position: relative;
+  &::after {
+    content: '';
+    position: relative;
+    width: 50%;
+    display: block;
+    height: 1px;
+    background-color: var(--blue);
+    margin: 0 auto;
+    bottom: -50px;
+  }
+  .title {
+    font-family: 'Montserrat',sans-serif,Arial;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+    font-size: 30px;
+    line-height: 1.2;
+    text-align: left;
+    width: 660px;
+    max-width: 90%;
+    color: var(--blue);
+  }
+  .tags {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  p {
+    font-family: 'Libre Baskerville', sans-serif, Arial;
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: 400;
+    margin: 0 0 25px 0;
+    padding: 0;
+  }
+
+  ol, ul {
+    li {
+      font-family: 'Libre Baskerville', sans-serif, Arial;
+      font-size: 20px;
+      line-height: 1.4;
+      font-weight: 400;
+      margin: 0 0 15px 0;
+      padding: 0;
+    }
+  }
+
+  .article-stats {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    padding: 10px 0;
+    &::before {
+      content: '';
+      border: 2px solid var(--grey-6c);
+      border-radius: 50%;
+      align-self: center;
+    }
+    p {
+      margin: 0;
+      color: var(--grey-6c);
+      font-size: 16px;
+      text-transform: uppercase;
+      &.date {
+        order: -1;
+      }
+    }
+  }
+  .link-title {
+    color: var(--blue);
+    text-decoration: none;
+    &:focus,
+    &:hover,
+    &:visited {
+      outline: 2px dotted var(--blue);
+      text-decoration: underline;
+    }
+  }
+  .link-read {
+    font-size: 18px;
+    padding: 10px 15px;
+    background-color: var(--blue);
+    border-radius: 25px;
+    border: 1px solid var(--blue);
+    color: var(--white);
+    font-weight: 600;
+    text-decoration: none;
+    &:focus,
+    &:hover {
+      outline: 2px dotted var(--black);
+      background-color: var(--white);
+      border: 1px solid var(--blue);
+      color: var(--blue);
+      text-decoration: underline;
+    }
+  }
+}
+
+.pagination-links {
+  padding: 25px 5%;
+  max-width: 992px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  a {
+    font-size: 18px;
+    padding: 10px 15px;
+    background-color: var(--blue);
+    border-radius: 25px;
+    border: 1px solid var(--blue);
+    color: var(--white);
+    font-weight: 600;
+    text-decoration: none;
+    &:focus,
+    &:hover {
+      outline: 2px dotted var(--black);
+      background-color: var(--white);
+      border: 1px solid var(--blue);
+      color: var(--blue);
+      text-decoration: underline;
+    }
+  }
+}
