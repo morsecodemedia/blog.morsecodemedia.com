@@ -67,8 +67,12 @@ export default {
     '@nuxtjs/sitemap',
     '@nuxtjs/robots',
     '@nuxtjs/redirect-module',
-    '@nuxt/content'
+    '@nuxt/content',
+    '@nuxtjs/gtm'
   ],
+  gtm: {
+    id: 'GTM-KTGKFVS'
+  },
   sitemap: {
     hostname: 'https://blog.morsecodemedia.com',
     gzip: true,
