@@ -4,7 +4,7 @@ description: "In the post, I talk about one of my side projects, the UTM Generat
 createdAt: 2021-06-29T10:55:32-04:00
 tags:
   - analytics
-draft: true
+draft: false
 ---
 
 Over the years I would have an account person ask about UTM parameters or more vaguely, how to track vanity URLs or QR codes. I usually address their questions with a littl education and then after awhile, I get the follow-up question, "Can you generate UTMs for me?"
