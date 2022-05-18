@@ -4,7 +4,7 @@ description: "In the post, I talk about one of my side projects, the Color Contr
 createdAt: 2021-07-01T13:05:32-04:00
 tags:
   - accessibility
-draft: true
+draft: false
 ---
 
 Ever since I acheived my CPACC certification in 2020, I have been pulled into more and more accessibility conversations. At first they began as high level conversations about basline things to look at: image alt text; focusable elements; proper H1-H6 heirarchy; and color contrast. As time went on, color contrast became a topic of conversation, more often than not. I would point designers to tools like the [WebAIM color contrast checker](https://webaim.org/resources/contrastchecker/), but I noticed that was only convering the base level of requirements. But to truly create an inclusive web, you can't just meet the bare minimum requirements. So I decided to build my own tool to compensate for more - the [Color Contrast Checker](https://ccc.morsecodemedia.com/?utm_source=blog.morsecodemedia.com&utm_medium=post).
